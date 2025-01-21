@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // Base URL for the hosted db.json
-const BASE_URL = "https://<your-netlify-site-name>.netlify.app/db.json";
+const BASE_URL = "https://hilarious-semifreddo-4e1635.netlify.app/db.json";
 
 // Fetch calendar details (events for specific date ranges)
 export const getCalendarDetails = async () => {
