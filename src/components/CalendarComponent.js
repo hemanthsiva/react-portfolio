@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
-import "react-big-calendar/lib/css/react-big-calendar.css";
 import { getCalendarDetails } from "../services/api";
+import "react-big-calendar/lib/css/react-big-calendar.css";
 import { format, parse, startOfWeek, getDay } from "date-fns";
-import EventList from "./EventList";
-import EventDetailsPopup from "./EventDetailsPopup";
+import EventList from "./EventList"; // Component to list events
+import EventDetailsPopup from "./EventDetailsPopup"; // Popup for event details
 
 const locales = {
   "en-US": require("date-fns/locale/en-US"),
 };
+
 const localizer = dateFnsLocalizer({
   format,
   parse,
@@ -19,7 +20,7 @@ const localizer = dateFnsLocalizer({
 
 const CalendarComponent = () => {
   const [events, setEvents] = useState([]);
-  const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedDate, setSelectedDate] = useState([]);
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [showEventList, setShowEventList] = useState(false);
   const [showEventDetails, setShowEventDetails] = useState(false);
@@ -57,7 +58,7 @@ const CalendarComponent = () => {
       }));
       setEvents(formattedEvents);
     } catch (error) {
-      console.error("Failed to fetch events:", error);
+      console.error("Error fetching events:", error);
     }
   };
 

@@ -27,14 +27,15 @@
 //   }
 // };
 
+import axios from "axios";
+
+// Function to fetch events for the calendar
 export const getCalendarDetails = async () => {
   try {
-    // Fetch data from the Netlify function (not directly from the JSON file)
-    const response = await fetch("/.netlify/functions/fetchJson");
-    const data = await response.json();
-    return data;
+    const response = await axios.get("/.netlify/functions/fetchJson"); // Netlify function to get JSON
+    return response.data;
   } catch (error) {
-    console.error("Error fetching events:", error);
+    console.error("Error fetching calendar events:", error);
     throw error;
   }
 };
