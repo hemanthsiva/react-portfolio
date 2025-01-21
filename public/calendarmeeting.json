@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "summary": "Job Interview - React Developer",
+      "start": "2025-01-20T10:00:00Z",
+      "end": "2025-01-20T11:00:00Z",
+      "desc": "Interview for React Developer position",
+      "link": "https://zoom.us/j/123456789",
+      "score": { "P": 85 },
+      "user_det": {
+        "candidate": {
+          "candidate_firstName": "John",
+          "candidate_lastName": "Doe",
+          "candidate_email": "john.doe@example.com"
+        },
+        "handled_by": {
+          "firstName": "Alice",
+          "lastName": "Smith",
+          "userRole": "Recruiter",
+          "userEmail": "alice.smith@example.com"
+        }
+      },
+      "job_id": {
+        "jobRequest_Title": "React Developer",
+        "jobRequest_Role": "Frontend Developer",
+        "jobRequest_KeySkills": "React, JavaScript, HTML, CSS",
+        "jobRequest_Description": "We are looking for a skilled React developer."
+      }
+    },
+    {
+      "id": 2,
+      "summary": "Job Interview - Java Developer",
+      "start": "2025-01-21T14:00:00Z",
+      "end": "2025-01-21T15:00:00Z",
+      "desc": "Interview for Java Developer position",
+      "link": "https://zoom.us/j/987654321",
+      "score": { "P": 90 },
+      "user_det": {
+        "candidate": {
+          "candidate_firstName": "Jane",
+          "candidate_lastName": "Smith",
+          "candidate_email": "jane.smith@example.com"
+        },
+        "handled_by": {
+          "firstName": "Bob",
+          "lastName": "Johnson",
+          "userRole": "Recruiter",
+          "userEmail": "bob.johnson@example.com"
+        }
+      },
+      "job_id": {
+        "jobRequest_Title": "Java Developer",
+        "jobRequest_Role": "Backend Developer",
+        "jobRequest_KeySkills": "Java, Spring, Hibernate",
+        "jobRequest_Description": "We are looking for an experienced Java developer."
+      }
+    }
+  ]
+  

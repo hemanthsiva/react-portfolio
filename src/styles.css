@@ -1,0 +1,44 @@
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Black background for the full page */
+    height: 100%;
+    color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .carousel-container {
+    width: 80%;
+    margin: 50px auto;
+  }
+  
+  .slick-slide {
+    display: flex !important;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 300px; /* Medium size cards */
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-side {
+    transform: translateY(-20px); /* First and third cards slightly above */
+  }
+  
+  .card-center {
+    transform: translateY(10px); /* Center card slightly below */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .slick-center .card {
+    transform: scale(1.1) translateY(20px); /* Highlight center card */
+  }
