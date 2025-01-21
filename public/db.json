@@ -1,0 +1,90 @@
+{
+    "events": [
+      {
+        "id": 1,
+        "summary": "Interview with John Doe",
+        "start": "2025-02-01T09:00:00",
+        "end": "2025-02-01T10:00:00",
+        "desc": "A technical interview for the Frontend Developer role",
+        "link": "https://meet.google.com/johndoe-interview",
+        "score": { "P": 85 },
+        "user_det": {
+          "candidate": {
+            "candidate_firstName": "John",
+            "candidate_lastName": "Doe",
+            "candidate_email": "johndoe@example.com"
+          },
+          "handled_by": {
+            "firstName": "Jane",
+            "lastName": "Smith",
+            "userRole": "Recruiter",
+            "userEmail": "janesmith@example.com"
+          }
+        },
+        "job_id": {
+          "jobRequest_Title": "Frontend Developer",
+          "jobRequest_Role": "UI Developer",
+          "jobRequest_KeySkills": "React, JavaScript, CSS",
+          "jobRequest_Description": "Responsible for building user interfaces."
+        }
+      },
+      {
+        "id": 2,
+        "summary": "Meeting with Sarah Lee",
+        "start": "2025-02-02T11:00:00",
+        "end": "2025-02-02T12:00:00",
+        "desc": "Project update meeting",
+        "link": "https://meet.google.com/sarah-lee-meeting",
+        "score": { "P": 92 },
+        "user_det": {
+          "candidate": {
+            "candidate_firstName": "Sarah",
+            "candidate_lastName": "Lee",
+            "candidate_email": "sarahlee@example.com"
+          },
+          "handled_by": {
+            "firstName": "Mark",
+            "lastName": "Taylor",
+            "userRole": "Project Manager",
+            "userEmail": "marktaylor@example.com"
+          }
+        },
+        "job_id": {
+          "jobRequest_Title": "Project Manager",
+          "jobRequest_Role": "Project Lead",
+          "jobRequest_KeySkills": "Agile, Scrum, Jira",
+          "jobRequest_Description": "Lead and manage project teams."
+        }
+      },
+      {
+        "id": 3,
+        "summary": "2nd Round",
+        "desc": "Second round of interviews for Django Developer role",
+        "start": "2025-01-29T20:00:00",
+        "end": "2025-01-29T21:00:00",
+        "link": "http://www.hhh.com",
+        "score": { "P": 6 },
+        "user_det": {
+          "candidate": {
+            "candidate_firstName": "Mohan",
+            "candidate_lastName": "Raj",
+            "candidate_email": "mohanrajk@dataterrain.com"
+          },
+          "handled_by": {
+            "firstName": "Vinodhini",
+            "lastName": "HR",
+            "userRole": "HR Employee",
+            "userEmail": "vinodhini_hr@dataterrain.com"
+          }
+        },
+        "job_id": {
+          "jobRequest_Title": "Django Developer",
+          "jobRequest_Role": "Software Engineer",
+          "jobRequest_KeySkills": "Django",
+          "jobRequest_Description": "Develop and maintain Django-based web applications."
+        }
+      }
+    ]
+  }
+  
+  
