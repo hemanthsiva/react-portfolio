@@ -1,7 +1,2 @@
 [build]
   publish = "public"
-
-[[redirects]]
-  from = "/api/*"
-  to = "/db.json"
-  status = 200
