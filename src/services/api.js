@@ -27,18 +27,14 @@
 //   }
 // };
 
-// src/services/api.js
 export const getCalendarDetails = async () => {
   try {
-    const response = await fetch(
-      "https://hilarious-semifreddo-4e1635.netlify.app/db.json"
-    );
-    if (!response.ok) {
-      throw new Error("Failed to fetch events data");
-    }
-    return await response.json();
+    // Fetch data from the Netlify function (not directly from the JSON file)
+    const response = await fetch("/.netlify/functions/fetchJson");
+    const data = await response.json();
+    return data;
   } catch (error) {
     console.error("Error fetching events:", error);
-    return [];
+    throw error;
   }
 };
