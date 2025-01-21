@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // Base URL for the mock API
-const BASE_URL = "http://localhost:3001";
+const BASE_URL = process.env.PUBLIC_URL || "";
 
 // Fetch calendar details (events for specific date ranges)
 export const getCalendarDetails = async () => {
